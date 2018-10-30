@@ -1,0 +1,67 @@
+.single-result {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.single-result h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 125%;
+}
+
+.single-result h4 {
+  margin: 0;
+}
+.single-result > * {
+  grid-column: 1;
+}
+
+.add-button,
+.remove-button {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  margin: auto;
+}
+
+.featureItem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.restaurant-rating,
+.average-price {
+  margin: 0;
+}
+.restaurant-rating {
+  margin-top: 5px;
+}
+
+.results__songkick .single-result,
+.itinerary__songkick .single-result {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.results__songkick .single-result > *,
+.itinerary__songkick .single-result > * {
+  grid-column: 2;
+}
+
+.results__songkick .single-result > div:first-child,
+.itinerary__songkick .single-result > div:first-child {
+  grid-column: 1;
+  grid-row: span 3;
+}
+.results__songkick .single-result .add-button,
+.results__songkick .single-result .remove-button,
+.itinerary__songkick .single-result .add-button,
+.itinerary__songkick .single-result .remove-button {
+  grid-column: 3;
+}
